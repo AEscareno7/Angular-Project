@@ -1,0 +1,14 @@
+<div class="card" *ngIf="datos!=null">
+    <div class="card-image">
+        <img src="{{datos.foto}}" style="height: 100%; width: 100%;" class="card-img-top" alt="...">
+    </div>
+    <div class="category">
+        <h4>{{datos.nombre}}</h4>
+    </div>
+    <div class="heading"> {{datos.mail}}
+        <div class="author">
+            <button href="#" class="btn btn-primary" (click)="presion()"> ¿Otra Persona?
+            </button>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,13 @@
+<span>Created <small>by</small></span>
+<h1 class="name">Armando Escareño</h1>
+
+<div *ngIf="usuario!=null; else espera">
+  <boot-tarjeta [datos]="usuario[0]" (presionopcion)="presion()"></boot-tarjeta>
+</div>
+<ng-template #espera>
+  <div class="loader">
+    <span class="loader-text">Resiviendo Datos...</span>
+    <span class="load"></span>
+  </div>
+
+</ng-template>
